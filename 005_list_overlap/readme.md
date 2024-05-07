@@ -13,20 +13,21 @@ function. It utilizes set intersection to efficiently identify common elements w
 <summary><b> Example</b></summary>
 
 import random <br>
-def common_elements(list1, list2): <br>
-    # Use set intersection to find common elements without duplicates <br>
+```python
+def common_elements(list1, list2):
+# Use set intersection to find common elements without duplicates
     return list(set(list1) & set(list2)) 
 
 # Generate two random lists of different sizes
-list1 = random.sample(range(1, 20), 7) <br>
+list1 = random.sample(range(1, 20), 7)
 list2 = random.sample(range(1, 20), 10)
 
-print("List 1:", list1) <br>
+print("List 1:", list1)
 print("List 2:", list2)
 
-common_elements_list = common_elements(list1, list2) <br>
+common_elements_list = common_elements(list1, list2)
 print("Common elements:", common_elements_list)
-
+```
 List 1: [2, 6, 7, 11, 5, 16, 10] <br>
 List 2: [8, 7, 12, 14, 18, 9, 6, 1, 19, 4] <br>
 Common elements: [6, 7]
