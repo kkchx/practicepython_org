@@ -1,6 +1,7 @@
 ## Character Input
 This Python script calculates the year in which a person will turn 100 years old.
 
+
 <details>
 <summary><b> Solutions</b></summary>
 
@@ -8,6 +9,7 @@ This Python script calculates the year in which a person will turn 100 years old
 2. More sophisticated with functions and error control <br>
 3. Elaborated solution 2 with datetime library usage  <br>
 </details>
+
 
 <details>
 <summary><b> Usage</b></summary>
