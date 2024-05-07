@@ -1,5 +1,5 @@
 import unittest
-from rock_paper_scissors import determine_winner
+from solution1 import determine_winner
 
 class TestGame(unittest.TestCase):
 
@@ -19,5 +19,16 @@ class TestGame(unittest.TestCase):
         result = determine_winner('rock', 'rock')
         self.assertEqual(result, "It's a tie!")
 
+    def test_lose(self):
+        result = determine_winner('rock', 'paper')
+        self.assertEqual(result, "You lose!")
+
+    def test_lose2(self):
+        result = determine_winner('paper', 'scissors')
+        self.assertEqual(result, "You lose!")
+
+    def test_lose3(self):
+        result = determine_winner('scissors', 'rock')
+        self.assertEqual(result, "You lose!")
 if __name__ == '__main__':
     unittest.main()
