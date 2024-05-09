@@ -30,5 +30,6 @@ class TestGame(unittest.TestCase):
     def test_lose3(self):
         result = determine_winner('scissors', 'rock')
         self.assertEqual(result, "You lose!")
+
 if __name__ == '__main__':
     unittest.main()
