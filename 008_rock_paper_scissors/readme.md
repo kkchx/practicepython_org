@@ -2,11 +2,13 @@
 This Python script allows you to play the classic game of Rock, Paper, Scissors against the computer.
 
 <details>
-<summary><b> Solutions</b></summary>
+<summary><b> How its Works</b></summary>
 
-1. Readability and simplicity
+- The script prompts you to enter your choice (rock, paper, or scissors).
+- It randomly selects a choice for the computer.
+- It determines the winner based on the choices made by you and the computer.
+- It asks if you want to play again. If yes, the game continues; if not, it exits.
 </details>
-
 
 <details>
 <summary><b> Usage</b></summary>
@@ -21,7 +23,9 @@ This Python script allows you to play the classic game of Rock, Paper, Scissors 
 <details>
 <summary><b> Example</b></summary>
 
-```python rock_paper_scissors.py```
+```python
+rock_paper_scissors.py
+
 Rock, Paper, Scissors!
 Enter your choice (rock, paper, or scissors): rock
 Computer chose: scissors
@@ -35,14 +39,7 @@ You win!
 Do you want to play again? (yes/no): no
 
 Thanks for playing!
+```
 </details>
 
 
-<details>
-<summary><b> How its Works</b></summary>
-
-- The script prompts you to enter your choice (rock, paper, or scissors).
-- It randomly selects a choice for the computer.
-- It determines the winner based on the choices made by you and the computer.
-- It asks if you want to play again. If yes, the game continues; if not, it exits.
-</details>

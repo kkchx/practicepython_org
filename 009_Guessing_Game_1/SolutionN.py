@@ -14,8 +14,22 @@ def compare(a, b):
     elif a > b:
         return -1 # too low
     else:
-        return 1 #
+        return 1
 
 
-if "__name__" == "__main__":
-
+if __name__ == "__main__":
+    while True:
+        computer_choice = random.randint(0, 20)
+        while True:
+            user_choice = get_integer()
+            result = compare(computer_choice, user_choice)
+            if result == 0:
+                print("You win")
+                break
+            elif result == -1:
+                print("Too low")
+            else:
+                print("Too high")
+        choice = input("do you want to continue? y/n: ")
+        if choice == "n":
+            break
