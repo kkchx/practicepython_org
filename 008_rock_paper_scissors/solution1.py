@@ -19,7 +19,7 @@ def determine_winner(user_choice, computer_choice):
          (user_choice == 'scissors' and computer_choice == 'paper'):
         return "You win!"
     else:
-        return "Computer wins!"
+        return "You lose!"
 
 def play_game():
     while True:
@@ -36,8 +36,3 @@ def play_game():
 
 if __name__ == "__main__":
     play_game()
-
-
-
-
-

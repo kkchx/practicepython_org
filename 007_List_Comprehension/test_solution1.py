@@ -15,5 +15,12 @@ class MyTestCase(unittest.TestCase):
         list3 = [8,11,13]
         self.assertEqual(list_sorter(list3), [8])
 
+    def test_list4(self):
+        list4 = []
+        self.assertEqual(list_sorter(list4), [])
+
+    def test_list5(self):
+        list5 = [2, 4, 6, 8]
+        self.assertEqual(list_sorter(list5), [2, 4, 6, 8])
 if __name__ == '__main__':
     unittest.main()

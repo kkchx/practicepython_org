@@ -1,5 +1,5 @@
 def list_sorter(list):
-    res_list = [item for item in list if item%2 == 0]
+    res_list = [x for x in list if x%2==0]
     return res_list
 
 if __name__ == '__main__':
