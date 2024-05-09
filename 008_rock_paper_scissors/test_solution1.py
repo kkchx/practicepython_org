@@ -1,5 +1,5 @@
 import unittest
-from rock_paper_scissors import determine_winner
+from solution1 import determine_winner
 
 class TestGame(unittest.TestCase):
 

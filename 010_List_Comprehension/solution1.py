@@ -1,10 +1,9 @@
 def intersection(list1, list2):
     list1 = list(set(list1))
     list2 = list(set(list2))
-    if len(list1) < len(list2):
-        res_list = [item for item in list1 if item in list2]
-    else:
-        res_list = [item for item in list2 if item in list1]
+    #TODO test shorter and longer lists
+    res_list = [item for item in list1 if item in list2]
+
 
     return res_list
 if __name__ == '__main__':

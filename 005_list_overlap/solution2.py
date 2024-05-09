@@ -1,7 +1,9 @@
 import random
 
 def common_elements(list1, list2):
-    return list(set(list1) & set(list2))
+    #TODO rewrite the logic using for loop and if
+    result = []
+    return result
 
 # Generate two random lists of different sizes using random.randint
 list1_size = random.randint(5, 10)
