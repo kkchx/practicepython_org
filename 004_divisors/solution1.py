@@ -1,10 +1,18 @@
-num = int(input("Please choose a number to divide: "))
-listRange = list(range(1,num+1))
+def find_divisors(num):
+    divisorList = []
+    for number in range(1, num + 1):
+        if num % number == 0:
+            divisorList.append(number)
+    return divisorList
 
-divisorList = []
 
-for number in listRange:
-    if num % number == 0:
-        divisorList.append(number)
+def main():
+    try:
+        num = int(input("Please choose a number to divide: "))
+        find_divisors(num)
+    except ValueError:
+        print("Please enter a number.")
 
-print(divisorList)
+
+if __name__ == "__main__":
+    main()
