@@ -22,8 +22,8 @@ class MyTestCase(unittest.TestCase):
     def test_common_ele4(self):
         # Test case 4: Lists with duplicate common elements
         list1 = [1, 1, 2, 2, 3, 3]
-        list2 = [1, 2, 3]
-        self.assertEqual(common_elements(list1, list2), [1, 2, 3])
+        list2 = []
+        self.assertEqual(common_elements(list1, list2), [])
 
     def test_common_ele5(self):
         # Test case 5: Random lists

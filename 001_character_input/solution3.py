@@ -10,11 +10,13 @@ def user_input(data):
         data = []
         return user_input(data)
 
-def main():
+def main(list):
     today = datetime.now().year
-    user_entry = []
-    user_entry = user_input(user_entry)
-    res_year = 100 - user_entry[1] + user_entry[2]
-    print(f"Hey {user_entry[0]}! You will turn 100 years old in {res_year}.")
+    res_year = 100 - list[1] + list[2]
+    return res_year
 
-main()
+if __name__ == "__main__":
+    user_entry = []
+    data = user_input(user_entry)
+    res_year = main(data)
+    print(f"Hey {data[0]}! You will turn 100 years old in {res_year}.")

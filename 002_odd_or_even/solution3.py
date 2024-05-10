@@ -1,17 +1,18 @@
 def check_number(num, divisor):
+    result = ""
     if num % 4 == 0:
-        print(f"{num} is a multiple of 4")
+        result += f"{num} is a multiple of 4"
     elif num % 2 == 0:
-        print(f"{num} is an even number")
+        result += f"{num} is an even number"
     else:
-        print(f"{num} is an odd number")
+        result += f"{num} is an odd number"
 
     if num % divisor == 0:
-        print(f"{num} divides evenly by {divisor}")
+        result += f"\n{num} divides evenly by {divisor}"
     else:
-        print(f"{num} does not divide evenly by {divisor}")
+        result += f"\n{num} does not divide evenly by {divisor}"
 
-
+    return result
 def main():
     try:
         num = int(input("Give me a number to check: "))
