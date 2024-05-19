@@ -18,8 +18,8 @@ class MyTestCase(unittest.TestCase):
 
 
     def test_remove_duplicates_check_with_duplicates(self):
-        input_list = [1, 2, 2, 3, 4, 4, 5]
-        self.assertEqual(remove_duplicates_check(input_list), [1, 3, 5])
+        input_list = [5,4,4,4,3,3,3,4,4,1,2,1]
+        self.assertEqual(remove_duplicates_check(input_list), [5,4,3,1,2])
 
 
     def test_remove_duplicates_check_no_duplicates(self):
