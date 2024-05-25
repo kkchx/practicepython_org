@@ -15,9 +15,9 @@ def guess_number():
         response = input("Enter 'higher', 'lower', or 'correct': ").lower()
 
         if response == 'higher':
-            lower_bound = guess + 1
+            pass
         elif response == 'lower':
-            upper_bound = guess - 1
+            pass
         elif response == 'correct':
             print("Great! I guessed your number in {} attempts.".format(attempts))
             break
