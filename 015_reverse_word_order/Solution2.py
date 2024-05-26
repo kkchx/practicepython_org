@@ -1,10 +1,14 @@
 def reverse_word_order(sentence):
     words = sentence.split()
     words_reversed = []
-    for i in range(len(words),0,-1):
+    for i in range(len(words),1,-1):
         words_reversed.append(words[i])
+    return words_reversed
 
-    reversed_sentence = " ".join(reversed(words_reversed))
+if __name__ == "__main__":
+    user_input = input("Enter a sentence: ")
+    sentence = reverse_word_order(user_input)
+    print(sentence)
 
 
 # TODO
